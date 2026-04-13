@@ -1,0 +1,424 @@
+/* ============================================================
+   about.css — About Page Specific Styles
+   Reclaim Furniture
+   Link AFTER style.css: <link rel="stylesheet" href="css/about.css">
+   ============================================================ */
+
+/* ============================================================
+   ABOUT HERO
+   ============================================================ */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+              url('../images/hero.jpg') center / cover no-repeat;
+  color: white;
+  padding: 110px 20px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  color: white;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   WHO WE ARE (Company Description)
+   ============================================================ */
+.who-we-are {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.who-we-are h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.who-we-are p {
+  max-width: 720px;
+  margin: 0 auto 14px;
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* ============================================================
+   IMPACT STATS
+   ============================================================ */
+.stats {
+  background: linear-gradient(135deg, #1b5e20, #43a047);
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.stat-item h3 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f9a825;
+  line-height: 1;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #c8e6c9;
+  margin-top: 8px;
+  letter-spacing: 0.2px;
+}
+
+/* ============================================================
+   OUR STORY
+   ============================================================ */
+.story-section {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.story-section h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.story-section p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+/* ============================================================
+   FOUNDER
+   ============================================================ */
+.founder-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.founder-section h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.founder-section p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+/* ============================================================
+   SUSTAINABILITY
+   ============================================================ */
+.sustainability {
+  background: #e8f5e9;
+  padding: 80px 20px;
+}
+
+.sustainability h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #1b5e20;
+}
+
+.sustainability p {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.sustainability-img {
+  width: 112%;
+  border-radius: 12px;
+  height: 400px;
+}
+
+.eco-badges {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.eco-badge {
+  background: white;
+  border-left: 4px solid #43a047;
+  padding: 18px 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 190px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.eco-badge:hover {
+  transform: translateY(-3px);
+}
+
+.eco-badge h4 {
+  color: #1b5e20;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.eco-badge p {
+  font-size: 13px;
+  color: #555;
+  margin: 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   ECO PLEDGE
+   ============================================================ */
+.pledge {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.pledge h2 {
+  font-size: 30px;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.pledge > .container > p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.pledge-list {
+  list-style: none;
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+}
+
+.pledge-list li {
+  padding: 13px 0 13px 38px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.pledge-list li:last-child {
+  border-bottom: none;
+}
+
+.pledge-list li::before {
+  content: "🌱";
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+
+/* ============================================================
+   JOURNEY TIMELINE
+   ============================================================ */
+.timeline {
+  padding: 20px 20px;
+  background: #f9fafb;
+}
+
+.timeline h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.timeline-items {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #43a047, #c8e6c9);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 38px;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.timeline-dot {
+  width: 44px;
+  height: 44px;
+  background: #1b5e20;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(27, 94, 32, 0.3);
+}
+
+.timeline-content {
+  padding-top: 8px;
+}
+
+.timeline-content h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1b5e20;
+}
+
+.timeline-content p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* ============================================================
+   MISSION + VISION
+   ============================================================ */
+.mission-vision {
+  padding: 80px 20px;
+  background: #f1f3f2;
+}
+
+.mission-vision h2 {
+  font-size: 26px;
+  margin-bottom: 14px;
+  color: #1b5e20;
+}
+
+.mission-vision p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* ============================================================
+   CORE VALUES
+   ============================================================ */
+.values-section {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.values-section > .container > p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   HOW IT WORKS (About version)
+   ============================================================ */
+.how-works-about {
+  padding: 80px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.how-works-about h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* ============================================================
+   ABOUT PAGE RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .about-hero p {
+    font-size: 15px;
+  }
+
+  .stats-grid {
+    gap: 30px;
+  }
+
+  .stat-item h3 {
+    font-size: 36px;
+  }
+
+  .eco-badges {
+    flex-direction: column;
+  }
+
+  .eco-badge {
+    min-width: unset;
+  }
+
+  .timeline-items::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 70px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 26px;
+  }
+
+  .pledge-list li {
+    font-size: 13px;
+  }
+}

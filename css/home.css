@@ -1,0 +1,595 @@
+/* ============================================================
+   home.css — Home Page Specific Styles
+   Reclaim Furniture
+   Link AFTER style.css: <link rel="stylesheet" href="css/home.css">
+   ============================================================ */
+
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar {
+  background: #1b5e20;
+  color: white;
+  padding: 11px 20px;
+}
+
+.trust-bar-inner {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #c8e6c9;
+  letter-spacing: 0.2px;
+}
+
+.trust-bar-inner span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  min-height: 88vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+              url('../images/hero.jpg') center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 60px 0;
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 17px;
+  color: #ddd;
+  margin-bottom: 32px;
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+   STATS STRIP
+   ============================================================ */
+.stats-strip {
+  background: white;
+  padding: 44px 20px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.stats-strip-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat-block h3 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1b5e20;
+  line-height: 1;
+}
+
+.stat-block p {
+  font-size: 13px;
+  color: #888;
+  margin-top: 8px;
+  letter-spacing: 0.2px;
+}
+
+/* ============================================================
+   SERVICES PREVIEW
+   ============================================================ */
+.services-preview {
+  background: #f9fafb;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-preview h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.services-preview > .container > p {
+  color: #666;
+  margin-bottom: 44px;
+}
+
+.service-preview-card {
+  background: white;
+  border-radius: 14px;
+  padding: 32px 24px;
+  width: 250px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.service-preview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.11);
+}
+
+.service-preview-card .icon {
+  font-size: 38px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.service-preview-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: #1b5e20;
+}
+
+.service-preview-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.service-preview-card a {
+  font-size: 13px;
+  color: #43a047;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-preview-card a:hover {
+  color: #1b5e20;
+}
+
+/* ============================================================
+   HOW IT WORKS
+   ============================================================ */
+.how-it-works {
+  background: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.how-it-works > .container > p {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.steps-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.step-box {
+  flex: 1;
+  min-width: 150px;
+  max-width: 190px;
+  text-align: center;
+  padding: 20px 12px;
+  position: relative;
+}
+
+.step-circle {
+  width: 58px;
+  height: 58px;
+  background: #1b5e20;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 14px rgba(27, 94, 32, 0.3);
+}
+
+.step-box:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 49px;
+  right: -80px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #a5d6a7, #c8e6c9);
+  z-index: 0;
+}
+
+.step-box h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.step-box p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   FEATURES SPLIT
+   ============================================================ */
+.features {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.features h2 {
+  font-size: 30px;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.features p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 22px;
+}
+
+.feature-list li {
+  padding: 11px 0 11px 30px;
+  position: relative;
+  color: #444;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  line-height: 1.5;
+}
+
+.feature-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #43a047;
+  font-weight: 700;
+}
+
+/* ============================================================
+   WHY CHOOSE US
+   ============================================================ */
+.why {
+  background: #e8f5e9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.why > p {
+  color: #666;
+  margin-bottom: 44px;
+}
+
+.why-cards {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px 22px;
+  width: 220px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+
+.why-card .icon {
+  font-size: 34px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.why-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1b5e20;
+}
+
+.why-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.65;
+}
+
+/* ============================================================
+   ECO IMPACT BANNER
+   ============================================================ */
+.eco-impact {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: white;
+  padding: 72px 20px;
+  text-align: center;
+}
+
+.eco-impact h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.eco-impact > p {
+  color: #a5d6a7;
+  margin-bottom: 44px;
+  font-size: 16px;
+}
+
+.eco-grid {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.eco-item .icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.eco-item h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #f9a825;
+  line-height: 1;
+}
+
+.eco-item p {
+  font-size: 13px;
+  color: #c8e6c9;
+  margin-top: 6px;
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials {
+  padding: 80px 20px;
+  background: white;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.testimonials > .container > p {
+  color: #666;
+  margin-bottom: 44px;
+}
+
+.testimonial-grid {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 30px 26px;
+  width: 310px;
+  text-align: left;
+  border-top: 4px solid #43a047;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+}
+
+.stars {
+  color: #f9a825;
+  font-size: 17px;
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 100%;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer-avatar {
+  width: 44px;
+  height: 44px;
+  background: #1b5e20;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.reviewer-info h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+}
+
+.reviewer-info p {
+  font-size: 12px;
+  color: #999;
+  font-style: normal;
+  margin: 2px 0 0;
+  max-width: 100%;
+}
+
+/* ============================================================
+   AREAS STRIP
+   ============================================================ */
+.areas-strip {
+  background: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.areas-strip h3 {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.areas-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.area-pill {
+  background: #e8f5e9;
+  color: #1b5e20;
+  padding: 7px 16px;
+  border-radius: 22px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #c8e6c9;
+  transition: background 0.2s;
+}
+
+.area-pill:hover {
+  background: #c8e6c9;
+}
+
+/* ============================================================
+   HOME PAGE RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .stats-strip-grid {
+    gap: 30px;
+  }
+
+  .stat-block h3 {
+    font-size: 32px;
+  }
+
+  .step-box:not(:last-child)::after {
+    display: none;
+  }
+
+  .trust-bar-inner {
+    gap: 14px;
+    font-size: 12px;
+  }
+
+  .eco-grid {
+    gap: 30px;
+  }
+
+  .service-preview-card,
+  .why-card {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
