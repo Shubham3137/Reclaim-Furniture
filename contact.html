@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Reclaim Furniture</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="icon" type="image/png" href="images/tab_icon.png">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <img src="images/logo.png" class="logo">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>Schedule a pickup, ask a question, or request a quote — we're here to help.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-wrapper">
+
+      <!-- FORM -->
+      <form class="contact-form-box" id="pickupForm">
+        <h2>📅 Schedule a Pickup</h2>
+        <p>Fill in your details below and our team will confirm your booking within 24 hours.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" placeholder="e.g. Rahul Sharma" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Pickup Address *</label>
+          <input type="text" placeholder="Full address including flat/floor number" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Area / Locality *</label>
+            <input type="text" placeholder="e.g. Salt Lake, Park Street" required>
+          </div>
+          <div class="form-group">
+            <label>Service Type *</label>
+            <select required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Basic Pickup (1–3 items)</option>
+              <option>Express Pickup (same/next day)</option>
+              <option>Bulk / Commercial Removal</option>
+              <option>Furniture Donation</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date *</label>
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <label>Preferred Time Slot *</label>
+            <select required>
+              <option value="" disabled selected>Select a slot</option>
+              <option>Morning (9 AM – 12 PM)</option>
+              <option>Afternoon (12 PM – 3 PM)</option>
+              <option>Evening (3 PM – 7 PM)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Furniture Details *</label>
+          <textarea placeholder="List the items you'd like to give us (e.g. 1 double bed, 2 chairs, 1 dining table). Mention any damage or special conditions." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Additional Notes</label>
+          <textarea placeholder="Anything else we should know? Floor number, lift availability, specific requests, etc." style="min-height: 80px;"></textarea>
+        </div>
+
+        <button class="form-submit" >Submit Pickup Request →</button>
+        <p class="form-note">🔒 Your information is kept private and never shared with third parties.</p>
+
+        <!-- ✅ SUCCESS MESSAGE -->
+          <p id="successMsg" style="display:none; margin-top:20px; padding:12px; background:#e8f5e9; color:#1b5e20; border-radius:8px; font-weight:600;">
+            ✅ Booking Confirmed! We’ll contact you shortly.
+          </p>
+
+        </form>
+
+      <!-- INFO PANEL -->
+      <div class="contact-info-box">
+
+        <div class="info-card">
+          <div class="icon">📧</div>
+          <div>
+            <h4>Email Us</h4>
+            <a href="mailto:support@reclaimfurniture.com">support@reclaimfurniture.com</a>
+            <p>We reply within 4–6 hours on working days.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Call Us</h4>
+            <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+            <p>Available Mon–Sat, 9 AM to 7 PM.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">💬</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <a href="#">Chat with us on WhatsApp</a>
+            <p>Quick responses for booking and queries.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">📍</div>
+          <div>
+            <h4>Our Location</h4>
+            <p>Kolkata, West Bengal, India</p>
+            <p>Serving all areas across Kolkata.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">🕐</div>
+          <div>
+            <h4>Working Hours</h4>
+            <table class="hours-table">
+              <tr><td>Monday – Friday</td><td>9 AM – 7 PM</td></tr>
+              <tr><td>Saturday</td><td>10 AM – 5 PM</td></tr>
+              <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">⚡</div>
+          <div>
+            <h4>Express Bookings</h4>
+            <p>Need same-day pickup? Call us directly and mention <strong>"Express"</strong> for priority scheduling (subject to availability).</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CONTACT US -->
+  <section class="why-contact">
+    <h2>Why Choose Us for Your Pickup?</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="icon">⏱️</div>
+        <h4>Fast Response</h4>
+        <p>We confirm bookings within 24 hours of your request.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">💸</div>
+        <h4>Best Price</h4>
+        <p>Fair market valuation with no negotiation pressure.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">🧹</div>
+        <h4>Zero Mess</h4>
+        <p>We handle all lifting and leave your space clean.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">♻️</div>
+        <h4>Eco Responsible</h4>
+        <p>Your furniture is recycled, not dumped in a landfill.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">📜</div>
+        <h4>Pickup Receipt</h4>
+        <p>We provide a receipt for every item we collect.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS SERVED -->
+  <section class="areas">
+    <h2>Areas We Serve in Kolkata</h2>
+    <p>We cover the entire city — if you're unsure, just give us a call.</p>
+    <div class="areas-grid">
+      <span class="area-tag">Salt Lake</span>
+      <span class="area-tag">New Town</span>
+      <span class="area-tag">Park Street</span>
+      <span class="area-tag">Ballygunge</span>
+      <span class="area-tag">Tollygunge</span>
+      <span class="area-tag">Behala</span>
+      <span class="area-tag">Dum Dum</span>
+      <span class="area-tag">Howrah</span>
+      <span class="area-tag">Jadavpur</span>
+      <span class="area-tag">Shyambazar</span>
+      <span class="area-tag">Ultadanga</span>
+      <span class="area-tag">Kasba</span>
+      <span class="area-tag">Garia</span>
+      <span class="area-tag">Barasat</span>
+      <span class="area-tag">Rajarhat</span>
+      <span class="area-tag">Sealdah</span>
+      <span class="area-tag">Kankurgachi</span>
+      <span class="area-tag">Entally</span>
+    </div>
+  </section>
+
+  <!-- RESPONSE PROMISE -->
+  <section class="response-promise">
+    <h2>Our Response Promise</h2>
+    <p>When you reach out, you'll always hear back from a real person — not a bot.</p>
+    <div class="promise-grid">
+      <div class="promise-item"><div class="icon">📩</div><h4>Email Reply</h4><p>Within 4–6 hours</p></div>
+      <div class="promise-item"><div class="icon">📞</div><h4>Call Back</h4><p>Within 2 hours</p></div>
+      <div class="promise-item"><div class="icon">✅</div><h4>Booking Confirmed</h4><p>Within 24 hours</p></div>
+      <div class="promise-item"><div class="icon">🚚</div><h4>Pickup Arrives</h4><p>On your chosen date</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container center">
+      <h2>Not Sure What to Do With Your Old Furniture?</h2>
+      <p>Just reach out — we'll guide you through the entire process, free of charge.</p>
+      <br>
+      <a href="services.html" class="btn">View Our Services</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <img src="images/logo.png" class="footer-logo">
+      <p>Recycle furniture and earn while saving the planet.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li>Furniture Pickup</li>
+        <li>Recycling & Reuse</li>
+        <li>Bulk Removal</li>
+        <li>Donation Program</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: support@reclaimfurniture.com</p>
+      <p>Phone: +91 XXXXX XXXXX</p>
+      <p>Kolkata, India</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Reclaim Furniture. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ✅ JAVASCRIPT -->
+<!-- <script>
+  const form = document.getElementById("pickupForm");
+  const msg = document.getElementById("successMsg");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop reload
+
+    msg.style.display = "block"; // show confirmation
+
+    form.reset(); // clear form
+
+    msg.scrollIntoView({ behavior: "smooth" });
+  });
+</script> -->
+
+<script>
+const form = document.getElementById("pickupForm");
+const msg = document.getElementById("successMsg");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const data = {
+    name: form.querySelector("input[type=text]").value,
+    phone: form.querySelector("input[type=tel]").value,
+    email: form.querySelector("input[type=email]").value,
+    address: form.querySelectorAll("input[type=text]")[1].value,
+    area: form.querySelectorAll("input[type=text]")[2].value,
+    service_type: form.querySelector("select").value,
+    details: form.querySelector("textarea").value
+  };
+
+  const response = await fetch("http://localhost:3000/book", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  if (response.ok) {
+    msg.style.display = "block";
+    form.reset();
+  } else {
+    alert("Error submitting form");
+  }
+});
+
+</script>
+
+</body>
+</html>
